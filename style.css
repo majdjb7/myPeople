@@ -1,0 +1,73 @@
+#header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 43px;
+}
+
+#askUser {
+    text-align: center;  
+}
+
+#numCards {
+    
+}
+
+.btn {
+}
+
+#grid {
+    display: grid;
+    width: 100%;
+    /* grid-template-columns: 50px 1fr; */
+    background-color: antiquewhite;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.card {
+    position:relative;
+    height: 120px;
+    background-color: lightslategray;
+    border-radius:3mm
+    /* display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr); */
+  }
+
+  .card:hover {
+    box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+  }
+
+#name {
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+#email {
+    text-align: right;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+img{
+    height: 120px;
+    position: absolute;
+}
+
+#footer {
+    text-align: center;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold; 
+    height: 40px;
+
+}

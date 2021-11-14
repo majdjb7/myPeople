@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyPeople</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div id="header">My People</div>
+    <div id="askUser">
+        <h1>Input the number of cards you want the website to generate. The default number is 10</h1>
+        <input id="numCards"></input>
+        <button class="btn">Submit</button>
+        <!-- large: "https://randomuser.me/api/portraits/women/80.jpg"
+medium: "https://randomuser.me/api/portraits/med/women/80.jpg"
+thumbnail: "https://randomuser.me/api/portraits/thumb/women/80.jpg" -->
+    </div>
+    <div class="peopleDiv"></div>
+
+    <div id="footer">H</div>
+
+    
+
+
+
+
+  
+    <script id="people-template" type="text/x-handlebars-template">
+        <div id="grid">
+            <!-- <div class="card">
+                <p id="name">{{ name.first }} {{ name.last }} </p>
+                <p id="email">{{ email }}</p>
+            </div> -->
+            {{#each people}}
+            <div class="card">
+                <img src="{{image}}">
+                <p id="name">{{ name }} </p>
+                <p id="email">{{ email }}</p>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
